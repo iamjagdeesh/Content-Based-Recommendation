@@ -33,11 +33,17 @@ public class App
 		String url = prefix + pageName;
 		try {
 			Document doc = Jsoup.connect(url).get();
-			content = doc.body().text();
-			try(FileWriter fileWriter = new FileWriter("../scrapedPages/page" + index + ".txt")) {
-				fileWriter.write(content);
-			} catch (Exception e) {
-				e.printStackTrace();
+			Elements pElems = doc.body().getElementsByTag("p");
+			for (int i = 0; i < pElems.size(); i++) {
+				content = pElems.get(i).text().trim();
+				if(content.equals("")) {
+					continue;
+				}
+				try(FileWriter fileWriter = new FileWriter("../crawledWikiContent/page" + index + "content" + i + ".txt")) {
+					fileWriter.write(content);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
