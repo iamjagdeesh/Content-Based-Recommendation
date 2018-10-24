@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Collapse, Button, CardBody, Card, Container, Row, Col, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import { Collapse, Button, CardBody, Card, Container, Row, Col, CardTitle, CardText, Jumbotron } from 'reactstrap';
 
 import Recommendation from './models/recommendation.js';
 
@@ -18,18 +18,6 @@ class App extends Component {
     this.recommendation = new Recommendation();
     this.getRecommendationData = this.getRecommendationData.bind(this);
   }
-
-  // componentDidMount() {
-  //   fetch('/lucene/recommend')
-  //     .then(response => {
-  //       console.log(response);
-  //       return response.json();
-  //     })
-  //     .then((data) => { 
-  //       console.log(data);
-  //       this.setState({ data: data, isDataLoading: true }); 
-  //     });
-  // }
 
   async getRecommendationData(e) {
     e.preventDefault();
@@ -66,7 +54,6 @@ class App extends Component {
             this.state.data.map((recRes, index) => {
               return (
                       <Row>
-                      {/* <Button color="primary" onClick={() => this.toggle(index)} style={{ marginBottom: '1rem' }}>Post {index+1}</Button> */}
                       <Card>
                         <CardBody>
                           <CardTitle>Post {index+1}</CardTitle>
@@ -91,6 +78,32 @@ class App extends Component {
               )
             })
           }
+          <Row>
+            <Jumbotron>
+              <h4>Explanation</h4>
+              <li>
+                Web contents are being scraped using java library called jsoup.
+              </li>
+              <li>
+                The scraped contents are indexed using Lucene based indexing api.
+              </li>
+              <li>
+                Stop words removal and stemming are done using Lucene.
+              </li>
+              <li>
+                For each query (Post), search api from Searcher object is being used to search in indexed documents.
+              </li>
+              <li>
+                The top 10 ranked recommendations are put in results for each post.
+              </li>
+              <li>
+                Indexing and recommendation are being done inside a backend restful web service (Spring Boot).
+              </li>
+              <li>
+                The react application in the front end hits the api and fetches the results and displays it on UI.
+              </li>
+            </Jumbotron>
+          </Row>
         </Container>
       </div>
     );
