@@ -34,12 +34,24 @@ public class App
 		try {
 			Document doc = Jsoup.connect(url).get();
 			Elements pElems = doc.body().getElementsByTag("p");
+			Elements preElems = doc.getElementsByTag("pre");
 			for (int i = 0; i < pElems.size(); i++) {
 				content = pElems.get(i).text().trim();
 				if(content.equals("")) {
 					continue;
 				}
 				try(FileWriter fileWriter = new FileWriter("../crawledWikiContent/page" + index + "content" + i + ".txt")) {
+					fileWriter.write(content);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			for (int i = 0; i < preElems.size(); i++) {
+				content = preElems.get(i).text().trim();
+				if(content.equals("")) {
+					continue;
+				}
+				try(FileWriter fileWriter = new FileWriter("../crawledWikiContent/page" + index + "contentCode" + i + ".txt")) {
 					fileWriter.write(content);
 				} catch (Exception e) {
 					e.printStackTrace();
