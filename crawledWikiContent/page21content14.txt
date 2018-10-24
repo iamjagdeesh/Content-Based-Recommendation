@@ -1,1 +1,0 @@
-The object itself is the value of its attributes inside the object instance:

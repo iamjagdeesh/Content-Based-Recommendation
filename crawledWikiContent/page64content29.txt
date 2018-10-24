@@ -1,1 +1,0 @@
-In the following sections we look at the implementation of this example.

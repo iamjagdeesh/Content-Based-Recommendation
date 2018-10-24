@@ -1,1 +1,0 @@
-A final variable is often used for universal constants, such as pi:

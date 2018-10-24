@@ -1,1 +1,0 @@
-The above class then can be associated with a SortedSet or other collections that support sorting.

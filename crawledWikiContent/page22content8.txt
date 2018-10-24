@@ -1,1 +1,0 @@
-+ operator can concatenate other objects with strings. For instance, integers will be converted to strings before the concatenation:

@@ -1,1 +1,0 @@
-Java code needs to be compiled twice in order to be executed:

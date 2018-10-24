@@ -1,1 +1,0 @@
-The code section 66 yields the desired result:

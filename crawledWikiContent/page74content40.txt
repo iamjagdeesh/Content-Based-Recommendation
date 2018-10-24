@@ -1,1 +1,0 @@
-So we have to first separate these areas and then we will split these areas into components.

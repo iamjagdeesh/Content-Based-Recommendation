@@ -1,1 +1,0 @@
-Generics are not mandatory but are is often used with the collection classes.

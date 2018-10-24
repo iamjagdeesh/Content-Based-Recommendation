@@ -1,1 +1,0 @@
-List all the methods that an implementing class of Movable should implement.

@@ -1,1 +1,0 @@
-The following code returns a random integer between n and m (where n <= randomNumber < m):

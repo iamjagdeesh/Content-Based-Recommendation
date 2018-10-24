@@ -1,1 +1,0 @@
-Writing to the screen is very easy, and can be accomplished using one of two methods:

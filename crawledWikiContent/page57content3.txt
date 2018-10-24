@@ -1,1 +1,0 @@
-A documentation comment is placed just above the commented entity (class, constructor, method, field).

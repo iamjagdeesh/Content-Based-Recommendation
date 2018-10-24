@@ -1,1 +1,0 @@
-The static import construct allows unqualified access to static members without inheriting from the type containing the static members:

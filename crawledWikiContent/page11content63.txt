@@ -1,1 +1,0 @@
-This class defines two void methods:

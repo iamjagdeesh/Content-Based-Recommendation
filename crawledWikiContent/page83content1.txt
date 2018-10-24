@@ -1,1 +1,0 @@
-The regular expressions (regex) are provided by the package java.util.regex.

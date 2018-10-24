@@ -1,1 +1,0 @@
-In the Java programming language, there are four kinds of variables.

@@ -1,1 +1,0 @@
-If two objects are equal in reference, they are equal in value too.

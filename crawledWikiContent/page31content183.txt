@@ -1,1 +1,0 @@
-The counter variable is incremented each time an object is created.

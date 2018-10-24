@@ -1,1 +1,0 @@
-So, now if you use the same code again, you can ignore the version element because you know that the value is to be provided by default.

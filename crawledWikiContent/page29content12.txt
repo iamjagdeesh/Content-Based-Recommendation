@@ -1,1 +1,0 @@
-The following is thus perfectly valid Java code; it contains Chinese characters in the class and variable names as well as in a string literal:

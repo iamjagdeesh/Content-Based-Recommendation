@@ -1,1 +1,0 @@
-The break keyword exits a flow control loop, such as a for loop. It basically breaks the loop.

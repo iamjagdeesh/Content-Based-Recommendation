@@ -1,1 +1,0 @@
-The demo calls a method runCommand to actually run the program.

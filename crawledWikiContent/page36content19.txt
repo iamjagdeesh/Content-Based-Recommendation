@@ -1,1 +1,0 @@
-Such a call reduces the code repetition.

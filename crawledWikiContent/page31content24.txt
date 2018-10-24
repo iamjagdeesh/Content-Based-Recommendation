@@ -1,1 +1,0 @@
-The java.lang.Byte class is the nominal wrapper class when you need to store a byte value but an object reference is required.

@@ -1,1 +1,0 @@
-The continue and break statements can be used with a label like follows:

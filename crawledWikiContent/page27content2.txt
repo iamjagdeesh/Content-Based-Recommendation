@@ -1,1 +1,0 @@
-However, as these perform much slower than primitive types, it is recommended to use primitive types when it is possible.

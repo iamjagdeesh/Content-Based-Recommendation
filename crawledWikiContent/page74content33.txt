@@ -1,1 +1,0 @@
-The card layout has several methods to change the currently displayed item:

@@ -1,1 +1,0 @@
-A List can be sorted by the Collections' sort method.

@@ -1,1 +1,0 @@
-If @Target is not specified, the annotation may be used on any program element.

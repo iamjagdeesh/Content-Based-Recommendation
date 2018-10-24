@@ -1,1 +1,0 @@
-float is a keyword which designates the 32 bit float primitive type.

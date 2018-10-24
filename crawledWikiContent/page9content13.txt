@@ -1,1 +1,0 @@
-The convention is that package names and directory names corresponding to the package consist of only lower case letters.

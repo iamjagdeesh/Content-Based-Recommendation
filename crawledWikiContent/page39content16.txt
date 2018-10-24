@@ -1,1 +1,0 @@
-The following example uses an anonymous inner class to implement an action listener.

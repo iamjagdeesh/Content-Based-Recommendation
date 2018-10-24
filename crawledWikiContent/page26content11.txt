@@ -1,1 +1,0 @@
-double Math.log(double) returns the natural logarithm of the parameter (not the common logarithm, as its name suggests!).

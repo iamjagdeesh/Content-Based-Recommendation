@@ -1,1 +1,0 @@
-JINI was an attempt from Sun to address this flexibility problem. In JINI, the client download the component interface implementation and execute it in the client space.

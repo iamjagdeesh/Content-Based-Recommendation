@@ -1,1 +1,0 @@
-We can pass any primitive data types or reference data type to a method.

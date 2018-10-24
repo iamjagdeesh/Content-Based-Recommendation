@@ -1,1 +1,0 @@
-3 As discussed earlier the paint(Graphics) method is the correct option. The name says it all.

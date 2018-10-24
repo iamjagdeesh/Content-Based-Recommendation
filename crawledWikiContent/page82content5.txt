@@ -1,1 +1,0 @@
-Just add " as sysdba" after your Oracle account name, eg:

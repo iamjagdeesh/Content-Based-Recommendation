@@ -1,1 +1,0 @@
-Native methods were used in the past to write performance critical sections but with java getting faster this is now less common. Native methods are currently needed when

@@ -1,1 +1,0 @@
-To embed an applet in a HTML page, you have to insert a <applet/> markup. This markup can have several attributes:

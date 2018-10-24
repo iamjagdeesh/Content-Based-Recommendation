@@ -1,1 +1,0 @@
-The comments in Java use the same syntax as in C++.

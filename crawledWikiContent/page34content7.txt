@@ -1,1 +1,0 @@
-The super keyword allows access to the members of the superclass of a class, as you can use this to access the members of the current class. Example:

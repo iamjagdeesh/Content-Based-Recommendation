@@ -1,1 +1,0 @@
-There are three types of numeric literals in Java.

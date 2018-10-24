@@ -1,1 +1,0 @@
-This code will compile but this code may corrupt the collection if the collection only contains strings:

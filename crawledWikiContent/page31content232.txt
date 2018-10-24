@@ -1,1 +1,0 @@
-How the catch-blocks are evaluated see Catching Rule

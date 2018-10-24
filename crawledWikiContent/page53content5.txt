@@ -1,1 +1,0 @@
-The following is the client class for the above server:

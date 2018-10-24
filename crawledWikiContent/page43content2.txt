@@ -1,1 +1,0 @@
-Use the Map interface if you need to keep related objects together in a Map where you can:
