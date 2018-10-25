@@ -83,7 +83,7 @@ class App extends Component {
             <h4>Explanation</h4>
             <ListGroup>
               <ListGroupItem active tag="h6">Crawling</ListGroupItem>
-              <ListGroupItem tag="p">Web contents (Code and Text) are being scraped using java library called <b>JSoup</b>.</ListGroupItem>
+              <ListGroupItem tag="p"><b>Java programming wikibooks and Oracle The JavaTM Tutorials</b> Web contents (Code and Text) are being scraped using java library called <b>JSoup</b>.</ListGroupItem>
             </ListGroup>
             <ListGroup>
               <ListGroupItem active tag="h6">Lucene</ListGroupItem>

@@ -1,8 +1,14 @@
 # Content Based Recommendation
 
 ## CSE 591: Adaptive Web (Assignment 2)
+Name: Jagdeesh Basavaraju
+ASU ID: 1213004713
+Email: jbasavar@asu.edu
 
 ## Description
+1. Java programming wikibooks and Oracle The JavaTM Tutorials Web contents (Code and Text) are being scraped using java library called JSoup.
+2. Indexing documents, stop words removal, stemming and recommending results for posts are done.
+3. Results are being displayed in UI.
 
 ## Steps to run the application
 
