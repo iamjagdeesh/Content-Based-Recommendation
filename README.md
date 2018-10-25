@@ -4,8 +4,8 @@
 
 ## Description
 1. Java programming wikibooks and Oracle The JavaTM Tutorials Web contents (Code and Text) are being scraped using java library called JSoup.
-2. Indexing documents, stop words removal, stemming and recommending results for posts are done.
-3. Results are being displayed in UI.
+2. Lucene based indexing documents, stop words removal, stemming and recommending results for the posts present in data.xlsx are done.
+3. Results are being rendered in UI (ReactJS).
 
 ## Steps to run the application
 
