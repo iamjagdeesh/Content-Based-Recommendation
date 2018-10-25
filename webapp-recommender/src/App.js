@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Collapse, Button, CardBody, Card, Container, Row, Col, CardTitle, CardText, Jumbotron } from 'reactstrap';
+import { Collapse, Button, CardBody, Card, Container, Row, Col, CardTitle, CardText, Jumbotron, ListGroup, ListGroupItem } from 'reactstrap';
 
 import Recommendation from './models/recommendation.js';
 
@@ -58,7 +58,7 @@ class App extends Component {
                         <CardBody>
                           <CardTitle>Post {index+1}</CardTitle>
                           <CardText>{this.state.posts[index]}</CardText>
-                          <Button onClick={() => this.toggle(index)}>Click to view recommendations</Button>
+                          <Button onClick={() => this.toggle(index)}>Show/Hide recommendations</Button>
                         </CardBody>
                       </Card>
                       <Collapse isOpen={this.state.collapse[index]}>
@@ -78,30 +78,26 @@ class App extends Component {
               )
             })
           }
-          <Row>
+            <Row>
             <Jumbotron>
-              <h4>Explanation</h4>
-              <li>
-                Web contents are being scraped using java library called jsoup.
-              </li>
-              <li>
-                The scraped contents are indexed using Lucene based indexing api.
-              </li>
-              <li>
-                Stop words removal and stemming are done using Lucene.
-              </li>
-              <li>
-                For each query (Post), search api from Searcher object is being used to search in indexed documents.
-              </li>
-              <li>
-                The top 10 ranked recommendations are put in results for each post.
-              </li>
-              <li>
-                Indexing and recommendation are being done inside a backend restful web service (Spring Boot).
-              </li>
-              <li>
-                The react application in the front end hits the api and fetches the results and displays it on UI.
-              </li>
+            <h4>Explanation</h4>
+            <ListGroup>
+              <ListGroupItem active tag="h6">Crawling</ListGroupItem>
+              <ListGroupItem tag="p">Web contents (Code and Text) are being scraped using java library called <b>JSoup</b>.</ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem active tag="h6">Lucene</ListGroupItem>
+              <ListGroupItem tag="p">The scraped contents are indexed using Lucene based indexing api. Specifically Lucene Document class is used.</ListGroupItem>
+              <ListGroupItem tag="p"><b>Stop words</b> removal and <b>stemming</b> are done using Lucene <b>EnglishAnalyzer</b> class.</ListGroupItem>
+              <ListGroupItem tag="p"><b>Porter stemming algorithm</b> is being used to stem.</ListGroupItem>
+              <ListGroupItem tag="p">For each query (Post), search api from Searcher object is being used to search in indexed documents.</ListGroupItem>
+              <ListGroupItem tag="p">The top 10 ranked recommendations are put in results for each post.</ListGroupItem>
+              <ListGroupItem tag="p">Indexing and recommendation are being done inside a <b>backend restful web service (Spring Boot)</b>.</ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem active tag="h6">Front-end</ListGroupItem>
+              <ListGroupItem tag="p">The <b>ReactJS</b> application in the front end hits the api and fetches the results and displays it on UI.</ListGroupItem>
+            </ListGroup>
             </Jumbotron>
           </Row>
         </Container>

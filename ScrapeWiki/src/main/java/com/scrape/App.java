@@ -7,11 +7,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Hello world!
  *
  */
+@SpringBootApplication
 public class App
 {
 	

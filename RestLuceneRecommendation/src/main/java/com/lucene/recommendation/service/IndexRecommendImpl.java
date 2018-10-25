@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.lucene.analysis.core.StopAnalyzer;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.TextField;
@@ -26,6 +28,7 @@ import org.apache.lucene.store.RAMDirectory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.tartarus.snowball.ext.EnglishStemmer;
 
 @Service
 public class IndexRecommendImpl implements IndexRecommend {
@@ -80,7 +83,8 @@ public class IndexRecommendImpl implements IndexRecommend {
 		Directory indexDir = new RAMDirectory();
 
 		// Specify the analyzer for tokenizing text.
-		StandardAnalyzer analyzer = new StandardAnalyzer();
+		//StandardAnalyzer analyzer = new StandardAnalyzer();
+		EnglishAnalyzer analyzer = new EnglishAnalyzer();
 		IndexWriterConfig config = new IndexWriterConfig(analyzer);
 		IndexWriter writer = new IndexWriter(indexDir, config);
 

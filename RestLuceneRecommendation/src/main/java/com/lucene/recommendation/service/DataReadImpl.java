@@ -42,7 +42,7 @@ public class DataReadImpl implements DataRead {
 			cell = row.getCell(1);
 			cellContent = dataFormatter.formatCellValue(cell);
 			cell = row.getCell(2);
-			cellContent += dataFormatter.formatCellValue(cell);
+			cellContent += "\n\n" + dataFormatter.formatCellValue(cell);
 			posts.add(cellContent);
 		}
 		
