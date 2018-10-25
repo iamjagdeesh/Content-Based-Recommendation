@@ -1,9 +1,6 @@
 # Content Based Recommendation
 
 ## CSE 591: Adaptive Web (Assignment 2)
-Name: Jagdeesh Basavaraju
-ASU ID: 1213004713
-Email: jbasavar@asu.edu
 
 ## Description
 1. Java programming wikibooks and Oracle The JavaTM Tutorials Web contents (Code and Text) are being scraped using java library called JSoup.
